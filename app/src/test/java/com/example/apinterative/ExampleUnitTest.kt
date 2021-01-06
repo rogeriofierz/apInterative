@@ -1,8 +1,13 @@
 package com.example.apinterative
 
+import android.content.Context
 import org.junit.Test
 
 import org.junit.Assert.*
+import org.junit.runner.RunWith
+import org.mockito.Mock
+import org.mockito.Mockito.`when`
+import org.mockito.runners.MockitoJUnitRunner
 
 /**
  * Example local unit test, which will execute on the development machine (host).

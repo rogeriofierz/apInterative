@@ -17,9 +17,6 @@ class MainActivity : AppCompatActivity(),
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        val currentFragment = supportFragmentManager.fragments.last()
-        if(currentFragment.tag == "DetailsFilms" || currentFragment.tag == "com.bumptech.glide.manager") {
-    
             when (item.itemId) {
                  R.id.navigation_home -> {
                     supportFragmentManager
@@ -28,10 +25,9 @@ class MainActivity : AppCompatActivity(),
                         .replace(R.id.nav_host_fragment, FilmFragment(), "Home")
                         .commit()
 
-
                 }
             }
-        }
+
         return true
     }
 

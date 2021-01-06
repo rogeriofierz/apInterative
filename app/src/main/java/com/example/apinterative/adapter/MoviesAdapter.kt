@@ -36,20 +36,10 @@ class MoviesAdapter(val results: List<ResultFilm>, private val cellClickListener
 
 class MoviesViewHolder(itemView : View): RecyclerView.ViewHolder(itemView){
 
-    fun bindView(film: Film, listener: (Film) -> Unit) {
-        itemView.setOnClickListener { listener(film) }
-    }
-
-    private val photo:ImageView = itemView.findViewById(R.id.movie_photo)
     private val title:TextView = itemView.findViewById(R.id.movie_title)
-    private val overview:TextView = itemView.findViewById(R.id.movie_overview)
-    private val rating:TextView = itemView.findViewById(R.id.movie_rating)
 
     fun bind(result: ResultFilm) {
-    //    Glide.with(itemView.context).load("http://image.tmdb.org/t/p/w500${movie.poster_path}").into(photo)
         title.text = "Filme : "+result.title
-   //     overview.text = movie.overview
-        rating.text = "Rating : "+result.episodeId.toString()
     }
 
 }
