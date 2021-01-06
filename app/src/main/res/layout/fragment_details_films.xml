@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.details.DetailsFilmFragment">
+
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/film_photo"
+                android:contentDescription="Movie Image"/>
+
+            <TextView
+                android:layout_below="@+id/movie_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_title"
+                android:layout_margin="5dp"
+                android:textSize="15sp"
+                android:text="Titulo :"
+                />
+
+            <TextView
+                android:layout_below="@+id/movie_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/film_episode"
+                android:layout_margin="5dp"
+                android:text="Episodio : "/>
+
+            <TextView
+                android:layout_below="@+id/film_episode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/film_producer"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:text="Producao : "/>
+
+            <TextView
+                android:layout_below="@+id/film_producer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/film_director"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:text="Direcao : "/>
+
+            <TextView
+                android:layout_below="@+id/film_director"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/film_date"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:text="Data  : "/>
+
+            <TextView
+                android:layout_below="@+id/film_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fil_opening"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:inputType="textMultiLine"
+                android:maxLines="20"
+                android:text="Abertura : "/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
